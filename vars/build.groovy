@@ -1,6 +1,10 @@
 def call(String mavenGoal){
-  
-  if ("${mavenGoal}" == "Clean")
+
+  if ("${mavenGoal}" == "print")
+     {
+       sh "welcome all"
+     }
+  else if ("${mavenGoal}" == "Clean")
      {
        sh "mvn clean"
      }
