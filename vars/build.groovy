@@ -2,7 +2,7 @@ def call(String mavenGoal){
 
   if ("${mavenGoal}" == "print")
      {
-       sh "welcome all"
+       sh 'echo "welcome all"'
      }
   else if ("${mavenGoal}" == "Clean")
      {
